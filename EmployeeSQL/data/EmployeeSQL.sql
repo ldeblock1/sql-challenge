@@ -11,7 +11,6 @@ JOIN salaries AS s ON e.emp_no = s.emp_no;
 SELECT first_name, last_name, hire_date
 FROM employees
 WHERE EXTRACT(YEAR FROM TO_DATE(hire_date, 'MM/DD/YY')) = 1986;
--- I had to look up a work around for this because your course doesn't teach us one =(
 
 --List the manager of each department along with their department number, department name,
 --employee number, last name, and first name:
